@@ -7,3 +7,8 @@ def main():
 
 if __name__ == '__main__':
     app.run()
+@app.route('/process_inputs', methods=['POST'])
+def process_inputs():
+    name = request.form.get('name', '')
+     ##email = request.form.get('in ', '')
+    return render_template("test")
